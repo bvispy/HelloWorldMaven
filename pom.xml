@@ -20,7 +20,7 @@
   <!-- CHANGE HERE by your team nexus server -->
   <url>http://65.1.92.246:8081/repository/maven-releases/</url>
   </repository>
-    <snapshotRepository>
+    <snapshotsRepository>
     <id>snapshots</id>
     <!-- CHANGE HERE by your team nexus server -->
     <url>http://65.1.92.246:8081/repository/maven-snapshots/</url>
