@@ -16,12 +16,21 @@
   
 <distributionManagement>
        <repository>
-         <id>internal.repo</id>
-         <name>Internal repo</name>
-         <url>file:///var/lib/jenkins/mycodeartifacts</url>
+       <id>internal.repo</id>
+       <name>Internal repo</name>
+       <url>file:///var/lib/jenkins/mycodeartifacts</url>
        </repository>
-</distributionManagement>
-
+  <repository>
+  <id>releases</id>
+  <!-- CHANGE HERE by your team nexus server -->
+  <url>http://65.1.92.246:8081/repository/maven-releases/</url>
+  </repository>
+    <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://65.1.92.246:8081/repository/maven-snapshots/</url>
+    </snapshotsrepository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
